@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&G Group SpA</title>
+   <meta property="og:image" type="image/png" content="">
+        <meta property="og:image:width" content="389px">
+        <meta property="og:image:height" content="542px">
+        <meta property="keywords" content="fletes santiago, mudanzas santiago, servicio de flete, servicio de mudanza, fletes, mudanzas. ">
+        <meta name="description"
+          content="Servicios Profesionales de Trasporte de Cargas">
+
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="D&G Group SpA">
+        <meta itemprop="description"
+          content="Servicios Profesionales de Trasporte de Cargas">
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/dg_icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="static/dg_icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="static/dg_icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="180x180" href="static/dg_icon.png" />
+    <link rel="manifest" sizes="180x180" href="static/dg_icon.png"/>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#ffe601cc; /* azul bootstrap */
+      --brand-dark:#ffe601cc;
+    }
+    html,body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    /* Navbar */
+    .navbar-brand b{letter-spacing:.5px}
+
+    /* Hero */
+    .hero{position:relative; min-height:72vh; display:grid; place-items:center; color: #050505cc; overflow:hidden;}
+    .hero::before{content:""; position:absolute; inset:0; background:linear-gradient(120deg,#ffe601cc,rgba(8, 8, 8, 0.35)), url('https://images.unsplash.com/photo-1586861635167-2f0df4b8d9c1?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat; filter:saturate(1.05);}
+    .hero > .container{position:relative; z-index:2;}
+    .hero h1{font-weight:700;}
+    .hero .badges .badge{background:#050505cc; color:#ffffff;}
+
+    /* Section helpers */
+    section{padding:72px 0;}
+    .section-title{font-weight:700;}
+
+    /* Cards */
+    .service-card{transition:transform .2s ease, box-shadow .2s ease; height:100%;}
+    .service-card:hover{transform:translateY(-4px); box-shadow:0 1rem 2rem rgba(0,0,0,.08)}
+
+    /* Gallery */
+    .gallery img{aspect-ratio: 4/3; object-fit:cover; border-radius:.75rem;}
+
+    /* WhatsApp Floating Button */
+    .wa-fab{position:fixed; right:20px; bottom:20px; z-index:9999; display:flex; align-items:center; gap:.5rem; padding:.8rem 1rem; border-radius:999px; background:#25D366; color:#fff; box-shadow:0 .5rem 1.25rem rgba(0,0,0,.25); border:0;}
+    .wa-fab:hover{background:#1ebe57}
+    .wa-fab img{width:22px; height:22px}
+    .wa-pulse{position:absolute; inset:0; border-radius:999px; box-shadow:0 0 0 0 rgba(37,211,102,.6); animation: pulse 2s infinite; z-index:-1}
+    @keyframes pulse{ 70%{box-shadow:0 0 0 18px rgba(37,211,102,0)} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0)} }
+
+    /* Footer */
+    footer a{color:#adb5bd; text-decoration:none}
+    footer a:hover{color:#fff}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="static/dg_icon.png" alt="img_logo" width="auto" height="100px">
+        <span><b>D&G Group SpA</b></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#servicios"><b>Servicios</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#por-que"><b>¿Por qué elegirnos?</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq"><b>Preguntas</b></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container py-5 text-center text-lg-start">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge rounded-pill text-dark bg-white mb-3">Santiago y Regiones</span>
+          <h1 class="display-5 mb-3">Fletes y Mudanzas rápidas, seguras y sin sorpresas</h1>
+          <p class="lead mb-4">Servicios Profesionales de Trasporte.</p>
+          <div class="badges d-flex flex-wrap gap-2">
+            <span class="badge">Embalaje y protección</span>
+            <span class="badge">Rápidos y cuidadosos</span>
+            <span class="badge">Equipo de confianza</span>
+          </div>
+          <div class="mt-4 d-flex gap-2">
+            <a href="#servicios" class="btn btn-dark btn-lg">Ver servicios</a>
+            <a href="#faq" class="btn btn-outline-danger btn-lg">Cómo trabajamos</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="https://images.unsplash.com/photo-1502764613149-7f1d229e230f?q=80&w=1200&auto=format&fit=crop" alt="Camión de mudanzas" class="img-fluid rounded-4 shadow">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <div class="container">
+      <h2 class="section-title mb-4">Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Servicio de Fletes</h5>
+              <br>
+              <p class="card-text">Traslado ágil de especies con amplia cobertura.</p>
+              <ul class="small mb-0">
+                <li>Punto a convenir</li>
+                <li>Protección de especias</li>
+                <li>Traslado rápido en ciudad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Servicio de Mudanzas</h5>
+              <br>
+              <p class="card-text">Mudanza estándar para hogares, oficinas y empresas.</p>
+              <ul class="small mb-0">
+                <li>Planificación de horarios</li>
+                <li>Protección de especies</li>
+                <li>Carga y descarga segura</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Servicios para Empresas</h5>
+              <p class="card-text">Alianza estrategicas para Empresas con servicio de despacho.</p>
+              <ul class="small mb-0">
+                <li>Personal profesionales</li>
+                <li>Protección de especies</li>
+                <li>Despacho de productos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué elegirnos -->
+  <section id="por-que" class="bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">¿Por qué elegirnos?</h2>
+          <ul class="list-unstyled lead">
+            <li class="mb-2">✔️ Experiencia y trato profesional.</li>
+            <li class="mb-2">✔️ Presupuestos claros, sin cobros sorpresa.</li>
+            <li class="mb-2">✔️ Flota y equipo adecuados a tu volumen.</li>
+            <li class="mb-2">✔️ Cobertura en Santiago y Regiones.</li>
+          </ul>
+          <a href="#faq" class="btn btn-outline-warning">Conoce nuestro proceso</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop" alt="Equipo de mudanza" class="img-fluid rounded-4 shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs / Proceso -->
+  <section id="faq" class="bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">Preguntas frecuentes</h2>
+          <div class="accordion" id="faqAcc">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q1h">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">¿Qué incluye el servicio?</button>
+              </h2>
+              <div id="q1" class="accordion-collapse collapse show" aria-labelledby="q1h" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Incluye el traslado y protección de las especies a nuestro cargo.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q2h">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">¿Realizan mudanzas a regiones?</button>
+              </h2>
+              <div id="q2" class="accordion-collapse collapse" aria-labelledby="q2h" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Sí, realizamos traslados dentro de Santiago y a distintas regiones. Coordinamos horarios y accesos.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q3h">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">¿Con cuánta anticipación debo agendar?</button>
+              </h2>
+              <div id="q3" class="accordion-collapse collapse" aria-labelledby="q3h" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Recomendamos coordinar con 3–7 días hábiles. Para emergencias, pregunta por disponibilidad de Flete.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">Nuestro proceso</h2>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Cotización estimada según inventario y direcciones.</li>
+            <li class="list-group-item">Confirmación de fecha, franja horaria y accesos.</li>
+            <li class="list-group-item">Embalaje y protección de enseres.</li>
+            <li class="list-group-item">Traslado y descarga en destino.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5 class="mb-3">D&G Group SpA</h5>
+          <p class="text-secondary">Traslados de hogar, oficinas y empresas con equipos profesionales.</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-uppercase text-secondary">Secciones</h6>
+          <ul class="list-unstyled">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#por-que">¿Por qué elegirnos?</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-uppercase text-secondary">Contacto</h6>
+          <ul class="list-unstyled mb-0 text-secondary">
+            <li>WhatsApp: <span class="text-light">+56 9 72710985</span></li>
+            <li>Correo: <span class="text-light">dyggroupspa@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4" />
+      <div class="d-flex justify-content-between flex-wrap gap-2">
+        <small class="text-secondary">© <span id="y"></span> D&G Group SpA. Todos los derechos reservados - Desarrollado por <a href="https://jbenavil.com"><b>JBenAvil SpA</b></a> </small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button (JS builds URL con mensaje) -->
+  <button class="wa-fab" id="waFab" type="button" aria-label="Chatear por WhatsApp" data-wa-number="56972710985" data-wa-message="Hola, necesito sus servicios">
+    <span class="wa-pulse" aria-hidden="true"></span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    <span class="fw-semibold">WhatsApp</span>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    // Año en footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Botón WhatsApp componiendo mensaje automáticamente
+    (function(){
+      const btn = document.getElementById('waFab');
+      function openWA(){
+        const number = btn.getAttribute('data-wa-number') || '';
+        const msg = btn.getAttribute('data-wa-message') || '';
+        const url = `https://wa.me/${number}?text=${encodeURIComponent(msg)}`;
+        window.open(url, '_blank');
+      }
+      btn.addEventListener('click', openWA);
+    })();
+  </script>
+</body>
+</html>
